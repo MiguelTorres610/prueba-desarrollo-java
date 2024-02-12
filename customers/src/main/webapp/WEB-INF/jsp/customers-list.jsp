@@ -1,5 +1,4 @@
 <%@ include file="common/header.jspf"%>
-<%@ include file="common/navigation.jspf"%>
 
 <div class="container">
 	<div>
@@ -22,23 +21,18 @@
 					</tr>
 				</thead>
 				<tbody>
-					<c:forEach items="${Customers}" var="customer">
+					<c:forEach items="${customers}" var="customer">
 						<tr>
 							<td>${customer.id}</td>
 							<td>${customer.name}</td>
 							<td>${customer.age}</td>
 							<td>${customer.phoneNumber}</td>
 							<td>${customer.address}</td>
-							<td><a type="button" class="btn btn-success"
-								href="/update-customer?id=${customer.id}">Update</a>
-							<a type="button" class="btn btn-warning"
-								href="/delete-customer?id=${customer.id}">Delete</a></td>
 						</tr>
 					</c:forEach>
 				</tbody>
 			</table>
 		</div>
 	</div>
-
 </div>
 <%@ include file="common/footer.jspf"%>

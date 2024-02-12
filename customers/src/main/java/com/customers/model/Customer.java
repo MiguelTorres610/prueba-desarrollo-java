@@ -16,12 +16,12 @@ public class Customer {
 	@Column(name = "name", length = 50)
 	private String name;
 	@Column(name = "age")
-	private String age;
+	private int age;
 	@Column(name = "phoneNumber")
-	private String phoneNumber;
+	private Long phoneNumber;
 	@Column(name = "address", length = 100)
 	private String address;
-	
+
 	public Customer() {
 		super();
 	}
@@ -42,19 +42,19 @@ public class Customer {
 		this.name = name;
 	}
 
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
 
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 
-	public String getPhoneNumber() {
+	public Long getPhoneNumber() {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(String phoneNumber) {
+	public void setPhoneNumber(Long phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 

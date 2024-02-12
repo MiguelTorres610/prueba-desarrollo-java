@@ -4,16 +4,15 @@ public class CustomerDto {
 
 	private Long id;
 	private String name;
-	private String age;
-	private String phoneNumber;
+	private int age;
+	private Long phoneNumber;
 	private String address;
-	
+
 	public CustomerDto() {
 		super();
 	}
-	
-	public CustomerDto(Long id, String name, String age, String phoneNumber, String address) {
-		super();
+
+	public CustomerDto(Long id, String name, int age, Long phoneNumber, String address) {
 		this.id = id;
 		this.name = name;
 		this.age = age;
@@ -37,19 +36,19 @@ public class CustomerDto {
 		this.name = name;
 	}
 
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
 
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 
-	public String getPhoneNumber() {
+	public Long getPhoneNumber() {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(String phoneNumber) {
+	public void setPhoneNumber(Long phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
@@ -60,5 +59,4 @@ public class CustomerDto {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
 }
